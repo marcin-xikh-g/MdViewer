@@ -1,0 +1,27 @@
+Stamp: x20240527_1600
+Node: N113
+Message: Add PowerShell helper for packaging command
+This file: docs/commits/x20240527_1600.txt
+
+Changed Files:
+scripts/build-exe.ps1
+docs/perspe/N113.md
+
+Per-file Notes:
++--------------------------------------+-----------------------------------------------------------------------------------------+
+| File                                 | Notes                                                                                   |
++--------------------------------------+-----------------------------------------------------------------------------------------+
+| scripts/build-exe.ps1                | Added strict-mode PowerShell wrapper that executes `npm run build:exe` from backend.    |
+| docs/perspe/N113.md                  | Logged automation progress and risk watch reflections for commit 2.                     |
++--------------------------------------+-----------------------------------------------------------------------------------------+
+
+Assumptions:
+- Windows contributors prefer a ready-to-run script over memorizing npm syntax.
+
+Problems Since Last Commit:
+- None.
+
+Legend:
+- '+' forms table frames and intersections.
+- '|' separates columns.
+- '-' runs horizontal separators.

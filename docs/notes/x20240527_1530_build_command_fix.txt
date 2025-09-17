@@ -1,0 +1,46 @@
+# Build Command Correction Planning
+
++------------------+--------------------------------------------------------------+--------------------------------------------------------------+--------------------------------------------------------------+-----------------------------------------------------------------------+
+| Track            | Current Steps                                                | Future Steps                                                 | Self-Considerations                                           | Role Perspectives                                                     |
++------------------+--------------------------------------------------------------+--------------------------------------------------------------+--------------------------------------------------------------+-----------------------------------------------------------------------+
+| Documentation    | Identify README gaps about the executable build command.     | Draft explicit instructions emphasizing `npm run build:exe`. | Ensure tone stays concise while guiding Windows users.       | QA wants reproducible commands; Dev Principal expects clarity.       |
+| Automation       | Audit missing helper scripts for Windows packaging.          | Provide PowerShell launcher with safe error handling.        | Keep dependencies minimal to avoid setup friction.           | DevOps anticipates pipeline reuse; Dreamer imagines GUI wrapper.     |
+| Cross-Platform   | Evaluate whether Linux/Mac contributors need parity tooling. | Add Bash helper script mirroring the PowerShell workflow.    | Confirm scripts respect repo relative paths for portability. | Typical Client values copy-paste simplicity across environments.     |
+| Communication    | Prepare perspectives and commit documentation requirements.  | Publish structured notes and perspective reflections.        | Double-check ASCII formatting before committing.             | Junior Dev learns workflow discipline; High Feature Creator plots UX.|
++------------------+--------------------------------------------------------------+--------------------------------------------------------------+--------------------------------------------------------------+-----------------------------------------------------------------------+
+
+Legend:
+- '+' marks intersections and frame corners.
+- '|' separates columns vertically.
+- '-' extends horizontal separators across the table width.
+
+ASCII Flow Snapshot:
+
+      [Plan]=====>{Docs Update}=====>{Automation Scripts}
+           \\
+            \\
+             ==> {Communicate Perspectives}
+
+Legend:
+- '[' and ']' enclose milestones.
+- '{' and '}' denote deliverables or artifacts.
+- '=' shows sequential flow.
+- '\\' sketches supporting substreams connecting outcomes.
+- '>' indicates progression direction.
+
+## Execution Matrix
+
++-------------------------+------------------------+------------------------+-----------------------------------------------+
+| Milestone               | Owner Signal           | Status                 | Notes                                         |
++-------------------------+------------------------+------------------------+-----------------------------------------------+
+| PowerShell Helper       | Automation Thread      | Completed ✅           | Script auto-navigates into backend directory. |
+| Bash Helper             | Cross-Platform Thread  | Completed ✅           | Mirrors PowerShell behaviour on Unix shells. |
+| README Refresh          | Documentation Thread   | Completed ✅           | Clarifies `npm run build:exe` usage paths.    |
+| Perspective Tracking    | Communication Thread   | Completed ✅           | Tables logged after every commit iteration.   |
++-------------------------+------------------------+------------------------+-----------------------------------------------+
+
+Legend:
+- '+' builds matrix borders and intersection points.
+- '|' splits columns for readability.
+- '-' stretches horizontal dividers.
+- '✅' indicates successful completion of a milestone.

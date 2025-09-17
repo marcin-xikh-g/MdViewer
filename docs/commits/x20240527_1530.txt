@@ -1,0 +1,27 @@
+Stamp: x20240527_1530
+Node: N113
+Message: Capture planning notes for build command correction
+This file: docs/commits/x20240527_1530.txt
+
+Changed Files:
+docs/notes/x20240527_1530_build_command_fix.txt
+docs/perspe/N113.md
+
+Per-file Notes:
++----------------------------------------------------------+------------------------------------------------------------------------------------+
+| File                                                     | Notes                                                                               |
++----------------------------------------------------------+------------------------------------------------------------------------------------+
+| docs/notes/x20240527_1530_build_command_fix.txt          | Logged current/future steps with ASCII planning visuals for the command correction. |
+| docs/perspe/N113.md                                      | Recorded stakeholder perspectives emphasizing script and doc clarity.              |
++----------------------------------------------------------+------------------------------------------------------------------------------------+
+
+Assumptions:
+- Documenting plans before code helps align subsequent commits with stakeholder expectations.
+
+Problems Since Last Commit:
+- None.
+
+Legend:
+- '+' shapes the borders and intersections.
+- '|' divides columns.
+- '-' spans horizontal separators.
