@@ -53,15 +53,26 @@ Leave any option out to fall back to the built-in defaults.
 ### Packaging to `.exe`
 
 1. Ensure [`pkg`](https://github.com/vercel/pkg) is installed (`npm install -g pkg`) or available via `npx`.
-2. Build the TypeScript sources:
-   ```bash
-   npm run build
+2. From the repository root run the helper for your platform **or** execute the npm command manually:
+
+   ```powershell
+   # Windows PowerShell
+   .\scripts\build-exe.ps1
    ```
-3. Package the executable:
+
    ```bash
+   # Linux / macOS
+   ./scripts/build-exe.sh
+   ```
+
+   ```bash
+   # Manual invocation (from backend directory)
+   cd backend
    npm run build:exe
    ```
-   The script copies `mdviewer.config.json` into the `dist/` folder so the executable and config sit side-by-side.
+
+   Both helpers change into `backend/`, run `npm run build:exe`, and bubble up any failures so typos such as `npm rin` are surfaced early.
+3. The script copies `mdviewer.config.json` into the `dist/` folder so the executable and config sit side-by-side.
 4. The resulting binary (`dist/MdViewer.exe`) accepts Markdown files as CLI arguments or drag-and-drop payloads.
 
 ## Running Tests

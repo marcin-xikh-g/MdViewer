@@ -1,0 +1,27 @@
+Stamp: x20240527_1630
+Node: N113
+Message: Provide Bash helper for packaging command
+This file: docs/commits/x20240527_1630.txt
+
+Changed Files:
+scripts/build-exe.sh
+docs/perspe/N113.md
+
+Per-file Notes:
++--------------------------------------+--------------------------------------------------------------------------------------------+
+| File                                 | Notes                                                                                      |
++--------------------------------------+--------------------------------------------------------------------------------------------+
+| scripts/build-exe.sh                 | Delivered executable Bash script delegating to `npm run build:exe` for Unix environments.  |
+| docs/perspe/N113.md                  | Captured cross-platform and reliability takeaways for the new helper.                      |
++--------------------------------------+--------------------------------------------------------------------------------------------+
+
+Assumptions:
+- Non-Windows contributors will appreciate parity with the PowerShell workflow.
+
+Problems Since Last Commit:
+- None.
+
+Legend:
+- '+' outlines the table and intersections.
+- '|' separates columns.
+- '-' forms horizontal lines between header and rows.

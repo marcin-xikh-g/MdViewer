@@ -1,0 +1,29 @@
+Stamp: x20240527_1700
+Node: N113
+Message: Document helper usage for packaging workflow
+This file: docs/commits/x20240527_1700.txt
+
+Changed Files:
+README.md
+docs/perspe/N113.md
+docs/notes/x20240527_1530_build_command_fix.txt
+
+Per-file Notes:
++------------------------------------------------------+----------------------------------------------------------------------------------------------+
+| File                                                 | Notes                                                                                        |
++------------------------------------------------------+----------------------------------------------------------------------------------------------+
+| README.md                                            | Added helper script walkthroughs and highlighted the correct `npm run build:exe` syntax.      |
+| docs/perspe/N113.md                                  | Summarized documentation progress and support rationale for commit 4.                        |
+| docs/notes/x20240527_1530_build_command_fix.txt      | Logged execution matrix capturing milestone completion with ASCII legend.                    |
++------------------------------------------------------+----------------------------------------------------------------------------------------------+
+
+Assumptions:
+- Making helper availability visible in README will prevent future command typos.
+
+Problems Since Last Commit:
+- None.
+
+Legend:
+- '+' frames and intersects the per-file table.
+- '|' splits columns for readability.
+- '-' spans horizontal separators.
