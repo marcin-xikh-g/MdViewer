@@ -1,0 +1,35 @@
+Stamp: x20240420_1225
+Node: N103
+Message: Add CLI pipeline and browser launching
+This file: docs/commits/x20240420_1225.txt
+
+Changed Files:
+backend/package.json
+backend/src/cli.ts
+backend/src/fileConversionService.ts
+backend/src/index.ts
+backend/src/markdownRenderer.ts
+backend/src/openInBrowser.ts
+
+Per-file Notes:
++-------------------------------+--------------------------------------------------------------------------+
+| File                          | Notes                                                                    |
++-------------------------------+--------------------------------------------------------------------------+
+| backend/package.json          | Declared CLI binary mapping to compiled entrypoint.                      |
+| backend/src/cli.ts            | Added argument parsing, conversion orchestration, and status logging.    |
+| backend/src/fileConversionService.ts | Implemented file IO service to convert Markdown to HTML outputs.         |
+| backend/src/index.ts          | Re-exported new services for external consumption.                       |
+| backend/src/markdownRenderer.ts | Corrected escaping path in highlight fallback helper.                    |
+| backend/src/openInBrowser.ts  | Added cross-platform routine to open generated HTML via system command.  |
++-------------------------------+--------------------------------------------------------------------------+
+
+Assumptions:
+- Manual argument parsing suffices for first release; additional flags can follow later.
+
+Problems Since Last Commit:
+- None beyond previously noted npm registry restriction.
+
+Legend:
+- '+' marks table corners and intersections.
+- '|' separates columns.
+- '-' draws horizontal rules.

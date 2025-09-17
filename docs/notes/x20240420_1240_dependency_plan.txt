@@ -1,0 +1,16 @@
+Dependency Strategy Shift
++-------------------------+-------------------------------------------------------------------+
+| Focus                   | Details                                                           |
++-------------------------+-------------------------------------------------------------------+
+| Current Steps           | Replace external markdown packages with internal renderer.        |
+| Future Steps            | Consider reintroducing libraries when registry access returns.    |
+| Self-Considerations     | Balance feature coverage with maintainable custom parser.         |
+| Role: QA                | Re-run tests ensuring new renderer meets expectations.            |
+| Role: Dev Principal     | Review parser readability and extensibility.                      |
+| Role: DevOps            | Appreciate zero third-party runtime dependencies.                 |
+| Role: High Dreaming Dev | Dreams about plugin hooks layered atop custom parser.             |
++-------------------------+-------------------------------------------------------------------+
+Legend:
+- '+' draws table borders and intersections.
+- '|' separates columns.
+- '-' underlines header rows.

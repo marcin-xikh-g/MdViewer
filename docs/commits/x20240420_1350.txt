@@ -1,0 +1,32 @@
+Stamp: x20240420_1350
+Node: N111
+Message: Wire CLI and service to configuration loader
+This file: docs/commits/x20240420_1350.txt
+
+Changed Files:
+backend/src/cli.ts
+backend/src/fileConversionService.ts
+tests/backend/markdownRenderer.test.mjs
+docs/notes/x20240420_1325_config_plan.txt
+
+Per-file Notes:
++-------------------------------------------+--------------------------------------------------------------------------+
+| File                                      | Notes                                                                    |
++-------------------------------------------+--------------------------------------------------------------------------+
+| backend/src/cli.ts                        | Load config beside executable, report path, and handle load failures.     |
+| backend/src/fileConversionService.ts      | Accept injected config and forward style overrides to renderer.          |
+| tests/backend/markdownRenderer.test.mjs   | Added regression verifying service honors injected style config.        |
+| docs/notes/x20240420_1325_config_plan.txt | Noted completion of CLI loading milestone.                              |
++-------------------------------------------+--------------------------------------------------------------------------+
+
+Assumptions:
+- Config load failures should stop execution before file conversion occurs.
+- Service consumers may mutate provided config, so constructor clones it.
+
+Problems Since Last Commit:
+- None.
+
+Legend:
+- '+' outlines table borders.
+- '|' separates columns.
+- '-' forms horizontal dividers.

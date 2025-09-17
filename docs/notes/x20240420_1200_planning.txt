@@ -1,0 +1,16 @@
+Current & Future Work Overview (ASCII Table)
++-------------------------+---------------------------------------------------------------+
+| Segment                 | Notes                                                         |
++-------------------------+---------------------------------------------------------------+
+| Current Steps           | bootstrap repo structure; align docs folders; prepare testing |
+| Future Steps            | implement markdown renderer; wire CLI; add packaging via pkg  |
+| Self-Considerations     | ensure ts/JS toolchain fits pkg; plan for Windows behaviours   |
+| Role: QA                | demand unit tests for converter; ensure HTML output validated  |
+| Role: Dev Principal     | enforce TypeScript structure; align with repo conventions      |
+| Role: DevOps            | verify pkg build reproducibility; script packaging command     |
+| Role: High Dreaming Dev | envision theme customization; potential GUI overlay            |
++-------------------------+---------------------------------------------------------------+
+Legend:
+- '+' denotes table corners and intersections.
+- '|' separates table columns.
+- '-' creates horizontal borders.

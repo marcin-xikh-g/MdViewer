@@ -1,0 +1,34 @@
+# Config Integration Plan
+
+Current Steps:
+```
++------------+-----------------------+-------------------+
+| Step Index | Description           | Status            |
++------------+-----------------------+-------------------+
+| 01         | Draft config schema   | done              |
+| 02         | Load config in CLI    | done              |
+| 03         | Apply style overrides | done              |
+| 04         | Document usage        | done              |
++------------+-----------------------+-------------------+
+```
+Legend: `+` and `|` mark table borders.
+
+Future Steps:
+```
+Step---->Outcome---->Benefit
+  1          2           A
+  2          3           B
+```
+Legend: `-` indicates horizontal connectors, `>` arrow direction, spaces separate columns.
+
+Self-Considerations:
+- Validate default behavior without config file.
+- Ensure style overrides are sanitized.
+- Provide helpful error messaging when config parsing fails.
+
+Role Perspectives:
+- QA: Need deterministic defaults and tests for config parsing.
+- Dev Principal: Config loader should be modular for future options.
+- DevOps: Config file must live beside executable for packaging.
+- Dreamer: Could later support multiple themes.
+- Typical Client: Wants easy way to tweak colors without editing code.

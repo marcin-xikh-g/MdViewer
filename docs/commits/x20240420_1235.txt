@@ -1,0 +1,31 @@
+Stamp: x20240420_1235
+Node: N104
+Message: Add packaging scripts and regression tests
+This file: docs/commits/x20240420_1235.txt
+
+Changed Files:
+backend/package.json
+backend/src/shims.d.ts
+tests/backend/markdownRenderer.test.mjs
+docs/notes/x20240420_1230_testing_plan.txt
+
+Per-file Notes:
++----------------------------------------+--------------------------------------------------------------------------+
+| File                                   | Notes                                                                    |
++----------------------------------------+--------------------------------------------------------------------------+
+| backend/package.json                   | Added test/build:exe scripts and pkg configuration.                      |
+| backend/src/shims.d.ts                 | Declared Node module shims to compile without external type packages.    |
+| tests/backend/markdownRenderer.test.mjs | Added node:test specs validating rendering and file conversion outputs.   |
+| docs/notes/x20240420_1230_testing_plan.txt | Documented testing and packaging focus with ASCII planning table.          |
++----------------------------------------+--------------------------------------------------------------------------+
+
+Assumptions:
+- Node built-in test runner is sufficient for verifying conversion logic.
+
+Problems Since Last Commit:
+- npm install remains blocked by registry permissions (highlight.js download denied).
+
+Legend:
+- '+' outlines table borders and intersections.
+- '|' separates columns.
+- '-' renders horizontal bars.

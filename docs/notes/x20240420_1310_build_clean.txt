@@ -1,0 +1,16 @@
+Build Cleanliness Update
++-------------------------+-------------------------------------------------------------------+
+| Focus                   | Details                                                           |
++-------------------------+-------------------------------------------------------------------+
+| Current Steps           | Remove process import to rely on global shim and ignore build artefacts. |
+| Future Steps            | Consider dedicated clean script for dist removal post-tests.       |
+| Self-Considerations     | Keep repository tidy despite local build outputs.                  |
+| Role: QA                | Confirms CLI uses global process without module dependency.        |
+| Role: Dev Principal     | Approves .gitignore covering dist and node_modules.                |
+| Role: DevOps            | Suggests CI wipe dist folders before packaging.                    |
+| Role: High Dreaming Dev | Imagines advanced build pipeline generating cross-target outputs.  |
++-------------------------+-------------------------------------------------------------------+
+Legend:
+- '+' draws table edges and intersections.
+- '|' separates columns.
+- '-' underlines header rows.

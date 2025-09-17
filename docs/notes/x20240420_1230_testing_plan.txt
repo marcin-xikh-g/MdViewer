@@ -1,0 +1,16 @@
+Testing & Packaging Outlook
++-------------------------+-------------------------------------------------------------------+
+| Focus                   | Details                                                           |
++-------------------------+-------------------------------------------------------------------+
+| Current Steps           | Add node:test checks consuming compiled dist outputs.             |
+| Future Steps            | Script pkg build for Windows executable delivery.                 |
+| Self-Considerations     | Manage missing registry packages; document blocked installs.      |
+| Role: QA                | Validate HTML generation via assertions on compiled output.       |
+| Role: Dev Principal     | Ensure CLI stays scriptable for automation contexts.              |
+| Role: DevOps            | Provide reproducible build: npm run build && pkg invocation.      |
+| Role: High Dreaming Dev | Picture pipeline for bundling multiple themes per exe.            |
++-------------------------+-------------------------------------------------------------------+
+Legend:
+- '+' draws edges and intersections.
+- '|' partitions columns.
+- '-' underlines header rows.
