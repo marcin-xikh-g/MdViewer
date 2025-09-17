@@ -1,0 +1,30 @@
+Stamp: x20240420_1330
+Node: N109
+Message: Introduce configuration loader scaffold
+This file: docs/commits/x20240420_1330.txt
+
+Changed Files:
+backend/src/configuration.ts
+tests/backend/configuration.test.mjs
+docs/notes/x20240420_1325_config_plan.txt
+
+Per-file Notes:
++-------------------------------------------+--------------------------------------------------------------------------+
+| File                                      | Notes                                                                    |
++-------------------------------------------+--------------------------------------------------------------------------+
+| backend/src/configuration.ts              | Added loader to discover config near executable and sanitize style fields. |
+| tests/backend/configuration.test.mjs      | Added coverage verifying parsing normalization and width conversion.      |
+| docs/notes/x20240420_1325_config_plan.txt | Marked schema drafting step as completed in planning table.               |
++-------------------------------------------+--------------------------------------------------------------------------+
+
+Assumptions:
+- Packaging tools will place mdviewer.config.json alongside the executable.
+- Consumers prefer string-based CSS values; numeric widths convert to px.
+
+Problems Since Last Commit:
+- None observed.
+
+Legend:
+- '+' marks table borders/intersections.
+- '|' separates columns.
+- '-' renders horizontal rules.

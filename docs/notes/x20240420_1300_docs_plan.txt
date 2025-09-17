@@ -1,0 +1,16 @@
+Documentation Update Plan
++-------------------------+-------------------------------------------------------------------+
+| Focus                   | Details                                                           |
++-------------------------+-------------------------------------------------------------------+
+| Current Steps           | Add README summarizing build, test, and packaging workflows.       |
+| Future Steps            | Consider tutorial GIFs once UI stabilizes.                         |
+| Self-Considerations     | Keep documentation aligned with custom renderer capabilities.      |
+| Role: QA                | Wants documentation to outline regression test commands.           |
+| Role: Dev Principal     | Ensures README reflects repository structure and scripts.          |
+| Role: DevOps            | Appreciates clarity on npm install prerequisites.                  |
+| Role: High Dreaming Dev | Envisions docs covering theme customization pipeline.              |
++-------------------------+-------------------------------------------------------------------+
+Legend:
+- '+' delineates table borders and intersections.
+- '|' separates columns.
+- '-' underlines header rows.

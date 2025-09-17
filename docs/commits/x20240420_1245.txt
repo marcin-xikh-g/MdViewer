@@ -1,0 +1,31 @@
+Stamp: x20240420_1245
+Node: N105
+Message: Replace external renderer with internal parser
+This file: docs/commits/x20240420_1245.txt
+
+Changed Files:
+backend/package.json
+backend/src/htmlTemplate.ts
+backend/src/markdownRenderer.ts
+docs/notes/x20240420_1240_dependency_plan.txt
+
+Per-file Notes:
++-----------------------------------------+--------------------------------------------------------------------------+
+| File                                    | Notes                                                                    |
++-----------------------------------------+--------------------------------------------------------------------------+
+| backend/package.json                    | Removed runtime dependencies after moving to custom renderer.            |
+| backend/src/htmlTemplate.ts             | Simplified CSS bundle now that highlight-specific styles are unused.     |
+| backend/src/markdownRenderer.ts         | Implemented lightweight Markdown parser covering key block/inline cases. |
+| docs/notes/x20240420_1240_dependency_plan.txt | Logged dependency strategy pivot with ASCII summary.                         |
++-----------------------------------------+--------------------------------------------------------------------------+
+
+Assumptions:
+- Custom parser delivering headings, lists, blockquotes, code blocks is sufficient for MVP.
+
+Problems Since Last Commit:
+- None; removal of blocked packages resolved npm install issues for renderer logic.
+
+Legend:
+- '+' marks table edges and intersections.
+- '|' separates column data.
+- '-' renders horizontal separators.

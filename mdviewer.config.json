@@ -1,0 +1,12 @@
+{
+  "style": {
+    "accentColor": "#6366f1",
+    "backgroundColor": "#f8fafc",
+    "backgroundGradient": "radial-gradient(circle at top, #ffffff 0%, #f8fafc 55%, #e2e8f0 100%)",
+    "baseFontFamily": "'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+    "codeBlockBackground": "#111827",
+    "codeBlockText": "#f8fafc",
+    "containerMaxWidth": "860px",
+    "customCss": ".container h1 { letter-spacing: 0.02em; }\n.container a:hover { color: #4338ca; }"
+  }
+}

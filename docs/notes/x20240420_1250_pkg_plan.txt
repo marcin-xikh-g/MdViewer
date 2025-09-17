@@ -1,0 +1,16 @@
+Packaging Adjustments
++-------------------------+-------------------------------------------------------------------+
+| Focus                   | Details                                                           |
++-------------------------+-------------------------------------------------------------------+
+| Current Steps           | Shift build script to use npx pkg without pinned dependency.       |
+| Future Steps            | Document prerequisite for developers to install pkg globally.      |
+| Self-Considerations     | Ensure npm install succeeds even without external registry access. |
+| Role: QA                | No runtime impact; keep verifying CLI after packaging.             |
+| Role: Dev Principal     | Prefers optional tooling to reduce friction.                       |
+| Role: DevOps            | Will update CI to pre-install pkg before invoking build:exe.       |
+| Role: High Dreaming Dev | Imagines wrappers for selecting multiple pkg targets.              |
++-------------------------+-------------------------------------------------------------------+
+Legend:
+- '+' draws table edges and intersections.
+- '|' separates columns.
+- '-' renders horizontal dividers.

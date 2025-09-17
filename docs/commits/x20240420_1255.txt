@@ -1,0 +1,27 @@
+Stamp: x20240420_1255
+Node: N106
+Message: Make packaging tooling optional
+This file: docs/commits/x20240420_1255.txt
+
+Changed Files:
+backend/package.json
+docs/notes/x20240420_1250_pkg_plan.txt
+
+Per-file Notes:
++------------------------------------+--------------------------------------------------------------------------+
+| File                               | Notes                                                                    |
++------------------------------------+--------------------------------------------------------------------------+
+| backend/package.json               | Swapped build:exe script to npx pkg and removed direct dev dependency.   |
+| docs/notes/x20240420_1250_pkg_plan.txt | Logged packaging approach emphasizing optional tooling.                    |
++------------------------------------+--------------------------------------------------------------------------+
+
+Assumptions:
+- Developers can install pkg separately when building the executable.
+
+Problems Since Last Commit:
+- npm install still blocked: registry forbids fetching typescript package in this environment.
+
+Legend:
+- '+' shapes table intersections.
+- '|' separates column data.
+- '-' renders horizontal boundaries.

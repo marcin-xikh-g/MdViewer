@@ -1,0 +1,30 @@
+{
+  "name": "mdviewer",
+  "version": "0.1.0",
+  "description": "Command line Markdown to HTML viewer",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "mdviewer": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "test": "npm run build && node --test ../tests/backend",
+    "build:exe": "npm run build && npx pkg dist/cli.js --targets node18-win-x64 --output dist/MdViewer.exe && node -e \"const fs=require('fs');const path=require('path');const cwd=process.cwd();const src=path.resolve(cwd,'../mdviewer.config.json');const dest=path.resolve(cwd,'dist','mdviewer.config.json');fs.copyFileSync(src,dest);\""
+  },
+  "keywords": [
+    "markdown",
+    "html",
+    "converter"
+  ],
+  "author": "MdViewer Contributors",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  },
+  "pkg": {
+    "scripts": "dist/**/*.js",
+    "assets": []
+  }
+}

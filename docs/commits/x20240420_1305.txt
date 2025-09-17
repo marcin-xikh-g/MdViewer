@@ -1,0 +1,29 @@
+Stamp: x20240420_1305
+Node: N107
+Message: Document workflows and update packaging log
+This file: docs/commits/x20240420_1305.txt
+
+Changed Files:
+README.md
+docs/notes/x20240420_1300_docs_plan.txt
+docs/commits/x20240420_1255.txt
+
+Per-file Notes:
++------------------------------------+--------------------------------------------------------------------------+
+| File                               | Notes                                                                    |
++------------------------------------+--------------------------------------------------------------------------+
+| README.md                          | Added project overview, CLI usage, testing, and packaging guidance.      |
+| docs/notes/x20240420_1300_docs_plan.txt | Captured documentation goals in ASCII planning table.                       |
+| docs/commits/x20240420_1255.txt    | Updated problem log to reflect TypeScript registry restriction.          |
++------------------------------------+--------------------------------------------------------------------------+
+
+Assumptions:
+- Contributors will consult README for build/install instructions.
+
+Problems Since Last Commit:
+- npm install continues failing for typescript downloads in this sandbox environment.
+
+Legend:
+- '+' shapes table intersections.
+- '|' separates column data.
+- '-' renders horizontal boundaries.

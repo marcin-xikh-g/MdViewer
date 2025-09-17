@@ -1,0 +1,32 @@
+Stamp: x20240420_1400
+Node: N112
+Message: Document configuration workflow and ship default theme
+This file: docs/commits/x20240420_1400.txt
+
+Changed Files:
+README.md
+backend/package.json
+mdviewer.config.json
+docs/notes/x20240420_1325_config_plan.txt
+
+Per-file Notes:
++-------------------------------------------+--------------------------------------------------------------------------+
+| File                                      | Notes                                                                    |
++-------------------------------------------+--------------------------------------------------------------------------+
+| README.md                                 | Added configuration section detailing supported style fields and usage.  |
+| backend/package.json                      | Ensured exe build copies config next to binary for drag-and-drop usage.  |
+| mdviewer.config.json                      | Introduced default theme demonstrating accent, fonts, and hover styling. |
+| docs/notes/x20240420_1325_config_plan.txt | Closed documentation milestone in planning tracker.                      |
++-------------------------------------------+--------------------------------------------------------------------------+
+
+Assumptions:
+- Providing a default config helps users discover customization quickly.
+- Copying config during packaging is sufficient without embedding via pkg assets.
+
+Problems Since Last Commit:
+- None.
+
+Legend:
+- '+' builds table borders and intersections.
+- '|' separates columns.
+- '-' forms horizontal dividers.

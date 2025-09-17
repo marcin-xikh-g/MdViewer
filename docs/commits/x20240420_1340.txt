@@ -1,0 +1,32 @@
+Stamp: x20240420_1340
+Node: N110
+Message: Allow HTML template to respect style adjustments
+This file: docs/commits/x20240420_1340.txt
+
+Changed Files:
+backend/src/htmlTemplate.ts
+backend/src/markdownRenderer.ts
+tests/backend/markdownRenderer.test.mjs
+docs/notes/x20240420_1325_config_plan.txt
+
+Per-file Notes:
++-------------------------------------------+--------------------------------------------------------------------------+
+| File                                      | Notes                                                                    |
++-------------------------------------------+--------------------------------------------------------------------------+
+| backend/src/htmlTemplate.ts               | Swapped static CSS for configurable composer honoring style overrides.    |
+| backend/src/markdownRenderer.ts           | Threaded optional styleAdjustments through to HTML builder.               |
+| tests/backend/markdownRenderer.test.mjs   | Added regression ensuring CSS customizations surface in output.          |
+| docs/notes/x20240420_1325_config_plan.txt | Recorded completion of style override implementation step.              |
++-------------------------------------------+--------------------------------------------------------------------------+
+
+Assumptions:
+- Custom CSS snippets should append after base styles for easy overrides.
+- Width overrides accept px strings or plain numbers convertible to px.
+
+Problems Since Last Commit:
+- None.
+
+Legend:
+- '+' marks table edges and intersections.
+- '|' separates columns.
+- '-' draws horizontal dividers.

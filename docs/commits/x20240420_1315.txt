@@ -1,0 +1,29 @@
+Stamp: x20240420_1315
+Node: N108
+Message: Clean CLI imports and ignore build artefacts
+This file: docs/commits/x20240420_1315.txt
+
+Changed Files:
+backend/src/cli.ts
+.gitignore
+docs/notes/x20240420_1310_build_clean.txt
+
+Per-file Notes:
++------------------------------------+--------------------------------------------------------------------------+
+| File                               | Notes                                                                    |
++------------------------------------+--------------------------------------------------------------------------+
+| backend/src/cli.ts                 | Dropped process module import to use global shim-friendly access.        |
+| .gitignore                         | Ignored backend dist outputs and node_modules for cleanliness.           |
+| docs/notes/x20240420_1310_build_clean.txt | Captured rationale for ignoring build artefacts via ASCII table.         |
++------------------------------------+--------------------------------------------------------------------------+
+
+Assumptions:
+- Global process shim suffices for CLI runtime in Node.
+
+Problems Since Last Commit:
+- None; build and tests now succeed locally using global TypeScript tooling.
+
+Legend:
+- '+' shapes table intersections.
+- '|' separates column data.
+- '-' renders horizontal boundaries.
